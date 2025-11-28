@@ -1,0 +1,58 @@
+路线按钮：
+<div data-title="路线" data-tooltip="1">
+</div>
+
+搜索按钮：
+<button id="search-button" data-title="搜索" data-tooltip="2"></button>
+
+起点输入框：
+<input autocomplete="off" maxlength="256" placeholder="输入起点或在图区上选点" class="route-start-input" type="text" value="">
+
+终点输入框：
+<input autocomplete="off" maxlength="256" placeholder="输入终点" class="route-end-input" type="text" value="">
+
+路线ul：id="route_list"
+
+票价：
+<span class="schemePrice"><font>票价<span class="yuanStance">¥</span>6</font></span>
+路线标签：
+<span class="schemeTag" style="background: #67C395"><font color="#ffffff">直达</font></span>
+路线名称div：
+class="schemeName"
+路线耗时：
+<span class="bus_time">1小时27分钟</span>
+距离：
+<span id="blDis_0">33.0公里</span> //blDis_0里最后的数字是序号，定位时要模糊匹配
+步行距离：
+最后一个span元素
+
+详情列表：
+位于 class=info-table 的 table 标签下面的 tr 标签，每个 tr 标签的 data-type 表示步行或者公交/地铁。
+步行：
+<td class="transferDetail">
+    <p class="walkdisinfo">步行&nbsp;
+        <a class="cs">240米</a>
+    </p>
+</td>
+BUS：
+上车站点：
+<div class="getonstop">
+        <a class="ks" data-tindex="0" data-cindex="1">环球度假区</a>站
+</div>
+下车站点：
+<div class="getoffstop">
+    <a class="ks" data-tindex="0" data-cindex="2">天安门西</a>站
+    <span>（A西北口出）</span>
+    下车&nbsp;&nbsp;
+</div>
+公交或地铁线路名称：
+<span class="line-name">地铁1号线八通线</span>
+线路起始结束站（行进方向）：
+<span class="l-grey direction">（环球度假区-福寿岭）</span>
+行驶站数：
+<span class="kl">
+    <a class="cs tf">22站</a>
+</span>
+
+路线图div：
+id="mask"
