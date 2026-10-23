@@ -1,2 +1,2 @@
 # py_spider
-Python爬虫练习项目合集
+Python个人爬虫项目合集
